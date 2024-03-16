@@ -1,5 +1,6 @@
-import React from "react";
-import Caresoul from "../components/Caresoul";
+import React,{ lazy, Suspense} from "react";
+const Caresoul = lazy(() => import("../components/Caresoul"));
+
 
 const Home = () => {
   return (
