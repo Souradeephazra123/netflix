@@ -1,4 +1,4 @@
-import React,{ lazy, Suspense} from "react";
+import React,{ lazy} from "react";
 const Caresoul = lazy(() => import("../components/Caresoul"));
 
 
