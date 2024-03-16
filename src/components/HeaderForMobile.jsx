@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MdOutlineCastConnected } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import Hero from "./Hero";
+import { Link } from "react-router-dom";
 
 const HeaderForMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +20,10 @@ const HeaderForMobile = () => {
       </div>
       <div className=" flex justify-between">
         <button className=" rounded-full border border-white px-3">
-          Tv shows
+          <Link to="/tv">TV Shows</Link>
         </button>
         <button className=" rounded-full border border-white  px-3">
-          Movies
+          <Link to="/movie"> Movies</Link>
         </button>
         <div>
           {" "}

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaRegBell } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className=" hidden  bg-black px-10 py-5 sm:flex flex-row items-center justify-between">
@@ -16,9 +17,18 @@ const Header = () => {
         </div>
 
         <ul className=" text-white flex items-center  gap-5 font-semibold">
-          <li>Home </li>
-          <li>TV Shows</li>
-          <li>Movies</li>
+          <li>
+            {" "}
+            <Link to="/">Home</Link>{" "}
+          </li>
+          <li>
+            {" "}
+            <Link to="/tv">TV Shows</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="/movie">Movies</Link>
+          </li>
           <li>New & Popular</li>
           <li>My List</li>
           <li>Browse By Language</li>
@@ -41,7 +51,6 @@ const Header = () => {
           className=" w-7 h-7"
         />
       </div>
-     
     </header>
   );
 };
