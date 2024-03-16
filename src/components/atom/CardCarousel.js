@@ -7,22 +7,8 @@ const SliderComponent = ({ child }) => {
   const [startX, setstartX] = useState(0);
   const [scrollLeft, setscrollLeft] = useState(0);
 
-  const handleRightButtonClick = () => {
-    const container = containerRef.current;
-    const scrollAmount = 500;
-    container.scrollTo({
-      left: container.scrollLeft + scrollAmount,
-      behavior: "smooth",
-    });
-  };
-  const handleLeftButtonClick = () => {
-    const container = containerRef.current;
-    const scrollAmount = 500;
-    container.scrollTo({
-      left: container.scrollLeft - scrollAmount,
-      behavior: "smooth",
-    });
-  };
+  
+  
 
   const handleTouchStart = (e) => {
     setstartX(e.touches[0].pageX);
@@ -41,7 +27,7 @@ const SliderComponent = ({ child }) => {
         <div
           className=" flex mt-5 overflow-x-auto relative bloc-tabsnone"
           ref={containerRef}
-          // style={{ overflow: "hidden" }}
+      
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
         >

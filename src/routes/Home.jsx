@@ -1,6 +1,5 @@
 import React from "react";
 import Caresoul from "../components/Caresoul";
-import Hero from "../components/Hero";
 
 const Home = () => {
   return (
